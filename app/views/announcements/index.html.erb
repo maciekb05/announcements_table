@@ -1,0 +1,9 @@
+<h1>Ogłoszenia</h1>
+
+<ul>
+  <% @announcements.each do |announcement| %>
+    <li>
+      <%= link_to announcement.title, announcement %>
+    </li>
+  <% end %>
+</ul>
